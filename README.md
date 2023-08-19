@@ -14,7 +14,7 @@ The `task-4` folder contains a set of animal classes showcasing polymorphism. Ea
 
 ## Task 5: To-Do Module (Mandatory)
 
-For the mandatory Task 5, I have developed a simple CRUD (Create, Read, Update, Delete) To-Do module using the Laravel Framework and followed TTD. The backend of the module handles the CRUD operations, while the frontend is rendered using the Blade template engine for those who are not familiar with VueJs. However, I used blade template.
+For the mandatory `task-5`, I have developed a simple CRUD (Create, Read, Update, Delete) To-Do module using the Laravel Framework and followed TTD. The backend of the module handles the CRUD operations, while the frontend is rendered using the Blade template engine for those who are not familiar with VueJs. However, I used blade template.
 
 ### Features of the To-Do Module
 
