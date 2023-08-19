@@ -1,8 +1,8 @@
 **README**
 
-# iNiLabs PHP Intern Assignment
+# PHP Intern Assignment
 
-Welcome to the iNiLabs PHP Intern Assignment repository! This repository contains my solutions to the coding assignments provided by iNiLabs for the PHP Intern position. I have chosen to work on Task 1, Task 4, and Task 5.
+Welcome to the PHP Intern Assignment repository! This repository contains my solutions to the coding assignments for the PHP Intern position. I have chosen to work on Task 1, Task 4, and Task 5.
 
 ## Task 1: Class Inheritance
 
