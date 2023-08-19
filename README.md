@@ -14,7 +14,7 @@ The `task-4` folder contains a set of animal classes showcasing polymorphism. Ea
 
 ## Task 5: To-Do Module (Mandatory)
 
-For the mandatory Task 5, I have developed a simple CRUD (Create, Read, Update, Delete) and followed TTD approach To-Do module using the Laravel Framework. The backend of the module handles the CRUD operations, while the frontend is rendered using the Blade template engine for those who are not familiar with VueJs. However, I used blade template.
+For the mandatory Task 5, I have developed a simple CRUD (Create, Read, Update, Delete) To-Do module using the Laravel Framework and followed TTD. The backend of the module handles the CRUD operations, while the frontend is rendered using the Blade template engine for those who are not familiar with VueJs. However, I used blade template.
 
 ### Features of the To-Do Module
 
@@ -29,7 +29,7 @@ To run and test the implementations, follow the steps below:
 
 1. Clone this repository: `git clone https://github.com/mdalifkhanrifat/php-intern-assignment.git`
 2. Navigate to each task folder using your preferred terminal or command prompt.
-3. Refer to the README files in individual task folders for specific instructions on running and testing each task.
+
 
 ## Contact
 
