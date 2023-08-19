@@ -1,70 +1,47 @@
 
+#   Test Driven Development
+This laravel To-do project are following TDD. Test Driven Development (TDD) is a programming style that can help you write well-designed and error-free code.
 
-## Prerequisites
+# TodoController Test Cases
 
-- Git installed
-- Composer installed
-- Access to the GitHub repository
+This file contains test cases for the `TodoController` using PHPUnit in Laravel.
 
-## Clone the Repository
+## Test Cases
 
-Use `git clone` to clone the repo to your local machine:
+- `it_shows_list_of_todo` - Tests getting all todos
+- `it_shows_a_single_data_of_todo` - Tests getting a single todo by ID
+- `it_shows_exception_if_wrong_individual_id_passed_of_todo` - Tests exception handling for invalid ID
+- `it_creates_a_new_data` - Tests creating a new todo
+- `it_update_a_specific_data` - Tests updating an existing todo 
+- `it_deletes_a_specific_data` - Tests deleting a todo
 
-```bash
-git clone https://github.com/mdalifkhanrifat/php-intern-assignment.git
-```
+## Setup 
 
-This will copy the entire repository contents to a new `php-intern-assignment` directory.
+- Uses Laravel's `RefreshDatabase` trait to reset database before each test
+- Creates todo factory for generating test data
+- Disables CSRF middleware as needed to allow POST/PUT/DELETE requests
 
-## Install Dependencies
+## Assertions
 
-Go into the project directory and install Composer dependencies:
+Uses Laravel assertion methods:
 
-```bash
-cd php-intern-assignment/task-5/To-do
-composer install
-```
+- `assertDatabaseCount` to check expected rows in table
+- `assertDatabaseHas` to verify database contains expected data
+- `assertEquals` to compare expected vs actual values
+- `expectException` to expect exception thrown
 
-This will install all PHP packages defined in `composer.json`.
+## Running Tests
 
-## Configure Environment
-
-1. Copy `.env.example` to `.env`
-
-2. Generate app key:
-
-```
-php artisan key:generate
-``` 
-
-3. Update `.env` with database and other credentials
-
-4. Set `APP_ENV` and `APP_DEBUG` appropriately
-
-## Migrate Database
-
-Run database migrations to create the schema:
+From project root:
 
 ```
-php artisan migrate
+./vendor/bin/phpunit --filter TodoControllerTest
 ```
 
-## Install Front-end Dependencies
-
-If using NPM, install dependencies:
+Or specific test case:
 
 ```
-npm install
+./vendor/bin/phpunit --filter it_shows_list_of_todo
 ```
 
-## Serve the Application
-
-You can now run the app locally:
-
-```
-php artisan serve
-```
-
-The app will be accessible in the browser at `http://localhost:8000`.
-
-And that's it! The GitHub repo is now cloned and set up locally.
+Let me know if you need any clarification or have additional questions!
