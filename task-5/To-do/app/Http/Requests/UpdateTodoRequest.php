@@ -30,11 +30,12 @@ class UpdateTodoRequest extends FormRequest
             ],
             'description' => [
                 'string',
-                'max:191',
+                'max:100',
             ],
             'is_completed' => [
+                'required',
                 'string',
-                'max:191',
+                'max:5',
             ],
         ];
     }

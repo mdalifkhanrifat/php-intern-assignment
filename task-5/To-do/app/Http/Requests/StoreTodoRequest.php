@@ -33,6 +33,7 @@ class StoreTodoRequest extends FormRequest
                 'max:100',
             ],
             'is_completed' => [
+                'required',
                 'string',
                 'max:5',
             ],

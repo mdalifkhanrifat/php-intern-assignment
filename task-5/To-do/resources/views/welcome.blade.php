@@ -16,9 +16,9 @@
         </style>
     </head>
     <body class="antialiased">
-        <div class="relative sm:flex sm:justify-center sm:items-center min-h-screen ">
+        <div class=" sm:flex sm:justify-center sm:items-center min-h-screen ">
 
-            <h1><a href="{{ route('todo.index') }}"> GO to (To-do)</a></h1>
+            <h1><a href="{{ route('todo.index') }}"> GO to (To-do CRUD)</a></h1>
         </div>
         </div>
     </body>
