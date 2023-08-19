@@ -37,5 +37,5 @@ If you have any questions about the solutions, please feel free to reach out to 
 
 Thank you for considering my application. I look forward to the opportunity to discuss my solutions and demonstrate my skills further.
 
-Best regards,
+Best regards,\
 Md. Alif Khan Rifat
