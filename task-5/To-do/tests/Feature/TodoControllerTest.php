@@ -5,16 +5,27 @@ namespace Tests\Feature;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Illuminate\Foundation\Testing\WithFaker;
 use Tests\TestCase;
+use App\Models\Todo;
+
 
 class TodoControllerTest extends TestCase
 {
-    /**
-     * A basic feature test example.
-     */
-    public function test_example(): void
-    {
-        $response = $this->get('/');
+    use RefreshDatabase;
 
-        $response->assertStatus(200);
+    /** @test   */
+    public function it_shows_list_of_todo(): void
+    {
+        // Arrange
+        Todo::factory()->count(2)->create();
+
+        // Act
+        $data=$this->get(route('todo.index'));
+        $count=0;
+        foreach($data as $key => $value){
+            $count++;
+        }
+
+        // Assert
+        $this->assertEquals(2, $count);
     }
 }
